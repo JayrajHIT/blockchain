@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+/*************** Result ***************/
+<br/>
+<br/>
+
 ${object}
 </body>
 </html>
