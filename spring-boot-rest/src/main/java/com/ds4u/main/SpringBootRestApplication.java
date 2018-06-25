@@ -17,21 +17,12 @@ public class SpringBootRestApplication {
 	private static Address forwardingAddress;
     private static WalletAppKit kit;
     
+    /**
+     * Main method
+     * @param args
+     */
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootRestApplication.class, args);
-		
-		  final String rpcuser ="hadoop";
-		  final String rpcpassword ="pass@123";
-		  
-		  Authenticator.setDefault(new Authenticator() {
-		      protected PasswordAuthentication getPasswordAuthentication() {
-		          return new PasswordAuthentication (rpcuser, rpcpassword.toCharArray());
-		      }
-		  });
-		  
-		  
-		
-		
 		
 	}
 }
