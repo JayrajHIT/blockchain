@@ -19,6 +19,12 @@ public class WelcomeController {
 
 	private static final String welcomemsg = "Welcome Mr. !";
 	
+	/**
+	 * controller for get methodName and call to api method in CallingRestApi class 
+	 * @param model
+	 * @param methodName
+	 * @return
+	 */
     @GetMapping("/welcome/user")
     public String welcomeUser(ModelMap model, String methodName) {
     	Object object= CallingRestApi.callSSLRestAPI("http://10.0.1.47:5008/", methodName);
