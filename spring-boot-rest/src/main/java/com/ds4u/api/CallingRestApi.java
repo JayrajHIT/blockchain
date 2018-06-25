@@ -9,6 +9,13 @@ import com.sun.jersey.api.client.WebResource;
 
 public class CallingRestApi {
 
+	
+	/**
+	 * method for calling API with client and webresources
+	 * @param url
+	 * @param input
+	 * @return
+	 */
 	public static String callSSLRestAPI(String url, String input) {
 
         String strResponse = "";
